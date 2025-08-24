@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Five O’Clock – Find where it's 5:00 now</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fun app that shows where in the world it's currently five o'clock.">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; }
+    header { padding: 48px 24px; text-align: center; background: #f6f7f9; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { margin: 8px 0; line-height: 1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px; }
+    a.btn { display: inline-block; padding: 10px 16px; border: 1px solid #ccc; border-radius: 10px; text-decoration: none; }
+    footer { text-align: center; padding: 24px; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Five O’Clock</h1>
+    <p>It’s always five o’clock somewhere! This app shows where in the world it’s 5:00 right now.</p>
+    <p><a class="btn" href="support.html">Support</a></p>
+  </header>
+  <main>
+    <h2>About the App</h2>
+    <p>Five O’Clock is a lightweight, just-for-fun app. No sign-in, no tracking—just quick timezone curiosity.</p>
+    <ul>
+      <li>See which city/region has local time at 5:00 now</li>
+      <li>Explore global time zones</li>
+    </ul>
+    <p><strong>Privacy:</strong> We don’t collect personal data or use analytics.</p>
+  </main>
+  <footer>
+    © <span id="y"></span> Five O’Clock
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
